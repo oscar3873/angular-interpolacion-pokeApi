@@ -1,0 +1,23 @@
+<div class="card">
+    <h3 class="card-title">{{titulo | uppercase}}</h3>
+    <figure class="card-content">
+        <img src={{imagen}} alt="Imagen">
+        <figcaption>{{informacion}}</figcaption>
+    </figure>
+    <table class="stats">
+        <thead class="stats-title">
+            <tr>
+                <th>
+                    <h4>Stats</h4>
+                </th>
+            </tr>
+        </thead>
+        <tbody class="stats-body">
+            <tr class="stats-row" *ngFor="let stat of stats">
+                <th class="stats-col">{{stat.name}}</th>
+                <th class="stats-col">{{stat.base_stat}}</th>
+            </tr>
+        </tbody>
+    </table>
+    <p class="card-footer"></p>
+</div>
